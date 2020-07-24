@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
 }
 /* sidebar */
 .navbar-brand{
@@ -15,7 +16,7 @@
     border-bottom: 1.5px solid #EAE6F6;
 }
 .logo h1{
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-weight: bold;
 }
 .burger{
@@ -30,7 +31,7 @@
     width: 20%;
     height: 88vh;
     background-color: white;
-    font-size: 1.1em;
+    font-size: 0.8em;
     letter-spacing: 1px;
     overflow: scroll;
 }
@@ -54,8 +55,12 @@
 
 /* heading */
 .enquiries{
-    background-color: rgba(235, 232, 232, 0.3);
-    border-bottom: 3px solid #EAE6F6;
+    background-color: #dce0e6;
+    border-bottom: 3px solid #dce0e6;
+    padding-top: 0.5em;
+}
+.enquiries h2{
+    font-size: 1.2em;
 }
 .enquiries h2 button:nth-child(1){
     background-color: #1E1E64;
@@ -82,17 +87,19 @@
 }
 .names{
     height: 100vh;
-     overflow: scroll
+     overflow: scroll;
+     
 }
 .name .serial, .name .date{
     color: #CA3185;
     background-color: #f2f2f2;
     font-weight: bold;
+    font-size: 0.8em;
 }
 .name{
     border-bottom: 1px solid #1E1E64;
-    border-right: 1px solid #1E1E64;
     transition: all 0.2s;
+    
 }
 .name:hover{
     background-color: #dce0e6;
@@ -101,10 +108,15 @@
     color: #1E1E64;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    
 }
+
 .data{
     display: flex;
     justify-content: space-between;
+    font-size: 0.9em;
 }
 .data-flex{
     flex-direction: column;
@@ -117,6 +129,7 @@
     color: grey;
     background-color: white;
     border-radius: 0.5em;
+    font-size: 0.8em;
 }
 
 /* table */
@@ -127,14 +140,23 @@
     display: none;
 }
 .table table{
-    width: 100%;
+    width: 80%;
     height: 100%;
+}
+.table .h4{
+    color: #CA3185;
+    font-size: 1.2em;
+}
+.table .h5{
+    font-size: 1.1em;
+    color: #4a4a4a;
 }
 table tr{
     height: 30%;
     width: 100%;
     padding: 0.5em;
     margin: 0.5em;
+    font-size: 0.8em;
 }
 table tr:nth-child(even){
     background-color: #dce0e6;
@@ -144,6 +166,7 @@ table tr td:nth-child(odd){
     width: 30%;
     font-weight: bold;
     color: #4a4a4a;
+    letter-spacing: 2px;
 }
 .table-visible{
     display: block;
