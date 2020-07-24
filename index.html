@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main class="wrapper">
+        <header>
+            <div class="navbar-brand d-flex justify-content-between align-items-center m-0 p-1">
+                <div class="logo px-5 py-3">
+                    <h1>KOSC</h1>
+                </div>
+                <div class="burger py-3 pr-5">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <nav>
+                <ul class="navlinks m-0">
+                    <li class="p-4"><a href="#"><i class="far fa-folder mr-2"></i> Dashboard</a></li>
+                    <li class="p-4"><a href="index.html"><i class="fas fa-user-friends mr-2"></i> Enquiries<i class="fas fa-chevron-right float-right"></i></a></li>
+                    <li class="p-4"><a href="#"><i class="far fa-clock mr-2"></i> Upcoming Followups</a></li>
+                    <li class="p-4"><a href="#"><i class="far fa-envelope mr-2"></i> Email Templates<i class="fas fa-chevron-right float-right"></i></a></li>
+                    <li class="p-4"><a href="#"><i class="fas fa-mobile mr-2"></i> SMS Templates<i class="fas fa-chevron-right float-right"></i></a></li>
+                    <li class="p-4"><a href="#"><i class="far fa-file mr-2"></i> Compose Mass Mail</a></li>
+                    <li class="p-4"><a href="#"><i class="fas fa-chart-line mr-2"></i> Reports</a></li>
+                    <li class="p-4"><a href="#"><i class="fas fa-cog mr-2"></i> Settings<i class="fas fa-chevron-right float-right"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="content" >
+            <div class="enquiries container-fluid" class="p-3">
+                <h2 class="py-2">
+                    All Enquiries
+                    <button class="btn float-right mr-md-2 rounded-0" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-search"></i> Search</button>
+                    <button class="btn float-right mr-md-2 rounded-0"><i class="fas fa-filter"></i> Filter</button>
+                    <button class="btn float-right mr-md-2 rounded-0"><i class="fas fa-cloud-upload-alt"></i> Import</button>
+                </h2>
+                <input class="mt-2" type="checkbox" id="check" name="check"><label for="check" class="ml-2 font-weight-bold">Multiple</label>
+                  <div class="collapse mt-2 p-4" id="collapseExample">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="inputName4" placeholder="Name">
+                              </div>
+                          <div class="form-group col-md-4">
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <input type="number" class="form-control" id="inputNumber4" placeholder="Mobile No.">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <input type="date" class="form-control" id="inputDate4" placeholder="Start date">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <button type="submit" class="btn">Search <i class="fas fa-search ml-2"></i></button>
+                  </div>
+                      
+                        </div>
+                      </form>
+                  </div>
+            </div>
+            <div class="info container-fluid">
+                <div class="names container-fluid">
+                    <div class="one name pl-2 pr-0 py-5">
+                        <span class="float-left p-2 mr-4 serial"></span><span class="h3"></span><span class="float-right p-2 date"></span>
+                    <ul class="data p-4">
+                        <li><span class="font-weight-bold tag">Source-</span> <span class="source"></span></li>
+                        <li><span class="font-weight-bold tag">Mobile-</span> <span class="phone"></span></li>
+                        <li><span class="font-weight-bold tag">Email-</span> <span class="email"></span></li>
+                        <li><span class="font-weight-bold tag">Location-</span> <span class="location"></span></li>
+                    </ul>
+                    <div class="status mx-3 px-2 py-3">
+                        <p class="stats"></p>
+                    </div>
+                    </div>
+                    <div class="two name px-2 py-5">
+                        <span class="float-left p-2 mr-4 serial"></span><span class="h3"></span><span class="float-right p-2 date"></span>
+                    <ul class="data p-4">
+                        <li><span class="font-weight-bold tag">Source-</span> <span class="source"></span></li>
+                        <li><span class="font-weight-bold tag">Mobile-</span> <span class="phone"></span></li>
+                        <li><span class="font-weight-bold tag">Email-</span> <span class="email"></span></li>
+                        <li><span class="font-weight-bold tag">Location-</span> <span class="location"></span></li>
+                    </ul>
+                    <div class="status mx-3 px-2 py-3">
+                        <p class="stats"></p>
+                    </div>
+                    </div>
+                    <div class="three name px-2 py-5">
+                        <span class="float-left p-2 mr-4 serial"></span><span class="h3"></span><span class="float-right p-2 date"></span>
+                    <ul class="data p-4">
+                        <li><span class="font-weight-bold tag">Source-</span> <span class="source"></span></li>
+                        <li><span class="font-weight-bold tag">Mobile-</span> <span class="phone"></span></li>
+                        <li><span class="font-weight-bold tag">Email-</span> <span class="email"></span></li>
+                        <li><span class="font-weight-bold tag">Location-</span> <span class="location"></span></li>
+                    </ul>
+                    <div class="status mx-3 px-2 py-3">
+                        <p class="stats"></p>
+                    </div>
+                    </div>
+                    <div class="four name px-2 py-5">
+                        <span class="float-left p-2 mr-4 serial"></span><span class="h3"></span><span class="float-right p-2 date"></span>
+                    <ul class="data p-4">
+                        <li><span class="font-weight-bold tag">Source-</span> <span class="source"></span></li>
+                        <li><span class="font-weight-bold tag">Mobile-</span> <span class="phone"></span></li>
+                        <li><span class="font-weight-bold tag">Email-</span> <span class="email"></span></li>
+                        <li><span class="font-weight-bold tag">Location-</span> <span class="location"></span></li>
+                    </ul>
+                    <div class="status mx-3 px-2 py-3">
+                        <p class="stats"></p>
+                    </div>
+                    </div>
+                    <div class="five name px-2 py-5">
+                        <span class="float-left p-2 mr-4 serial"></span><span class="h3"></span><span class="float-right p-2 date"></span>
+                    <ul class="data p-4">
+                        <li><span class="font-weight-bold tag">Source-</span> <span class="source"></span></li>
+                        <li><span class="font-weight-bold tag">Mobile-</span> <span class="phone"></span></li>
+                        <li><span class="font-weight-bold tag">Email-</span> <span class="email"></span></li>
+                        <li><span class="font-weight-bold tag">Location-</span> <span class="location"></span></li>
+                    </ul>
+                    <div class="status mx-3 px-2 py-3">
+                        <p class="stats"></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="table container-fluid px-3 py-5">
+                    <div class="tables table-one">
+                        <span class="h4 enq-name"></span><span class="float-right h4"><i class="fas fa-times"></i></span>
+                    <ul class="tabs d-flex mt-5 mb-4">
+                        <li class="mr-3 pb-2 active">Overview</li>
+                        <li class="mx-3 pb-2">Conversation</li>
+                        <li class="mx-3 pb-2">SMS</li>
+                        <li class="mx-3 pb-2">Email</li>
+                    </ul>
+                    <span class="h5 font-weight-bold mx-2">Enquiry Details</span>
+                    <table class="mt-4 mx-2 pt-1">
+                        <tr>
+                            <td>Name</td>
+                            <td class="table-name"></td>
+                        </tr>
+                        <tr>
+                            <td>Serial No.</td>
+                            <td class="table-serial"></td>
+                        </tr>
+                        <tr>
+                            <td>Date</td>
+                            <td class="table-date"></td>
+                        </tr>
+                        <tr>
+                            <td>Source</td>
+                            <td class="table-source"></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td class="table-phone"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td class="table-email"></td>
+                        </tr>
+                        <tr>
+                            <td>Location</td>
+                            <td class="table-location"></td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td class="table-stats"></td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="tables table-two">
+                        <span class="h4 enq-name"></span><span class="float-right h4"><i class="fas fa-times"></i></span>
+                    <ul class="tabs d-flex mt-5 mb-4">
+                        <li class="mr-3 pb-2 active">Overview</li>
+                        <li class="mx-3 pb-2">Conversation</li>
+                        <li class="mx-3 pb-2">SMS</li>
+                        <li class="mx-3 pb-2">Email</li>
+                    </ul>
+                    <span class="h5 font-weight-bold mx-2">Enquiry Details</span>
+                    <table class="mt-4 mx-2 pt-1">
+                        <tr>
+                            <td>Name</td>
+                            <td class="table-name"></td>
+                        </tr>
+                        <tr>
+                            <td>Serial No.</td>
+                            <td class="table-serial"></td>
+                        </tr>
+                        <tr>
+                            <td>Date</td>
+                            <td class="table-date"></td>
+                        </tr>
+                        <tr>
+                            <td>Source</td>
+                            <td class="table-source"></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td class="table-phone"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td class="table-email"></td>
+                        </tr>
+                        <tr>
+                            <td>Location</td>
+                            <td class="table-location"></td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td class="table-stats"></td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="tables table-three">
+                        <span class="h4 enq-name"></span><span class="float-right h4"><i class="fas fa-times"></i></span>
+                    <ul class="tabs d-flex mt-5 mb-4">
+                        <li class="mr-3 pb-2 active">Overview</li>
+                        <li class="mx-3 pb-2">Conversation</li>
+                        <li class="mx-3 pb-2">SMS</li>
+                        <li class="mx-3 pb-2">Email</li>
+                    </ul>
+                    <span class="h5 font-weight-bold mx-2">Enquiry Details</span>
+                    <table class="mt-4 mx-2 pt-1">
+                        <tr>
+                            <td>Name</td>
+                            <td class="table-name"></td>
+                        </tr>
+                        <tr>
+                            <td>Serial No.</td>
+                            <td class="table-serial"></td>
+                        </tr>
+                        <tr>
+                            <td>Date</td>
+                            <td class="table-date"></td>
+                        </tr>
+                        <tr>
+                            <td>Source</td>
+                            <td class="table-source"></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td class="table-phone"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td class="table-email"></td>
+                        </tr>
+                        <tr>
+                            <td>Location</td>
+                            <td class="table-location"></td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td class="table-stats"></td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="tables table-four">
+                        <span class="h4 enq-name"></span><span class="float-right h4"><i class="fas fa-times"></i></span>
+                    <ul class="tabs d-flex mt-5 mb-4">
+                        <li class="mr-3 pb-2 active">Overview</li>
+                        <li class="mx-3 pb-2">Conversation</li>
+                        <li class="mx-3 pb-2">SMS</li>
+                        <li class="mx-3 pb-2">Email</li>
+                    </ul>
+                    <span class="h5 font-weight-bold mx-2">Enquiry Details</span>
+                    <table class="mt-4 mx-2 pt-1">
+                        <tr>
+                            <td>Name</td>
+                            <td class="table-name"></td>
+                        </tr>
+                        <tr>
+                            <td>Serial No.</td>
+                            <td class="table-serial"></td>
+                        </tr>
+                        <tr>
+                            <td>Date</td>
+                            <td class="table-date"></td>
+                        </tr>
+                        <tr>
+                            <td>Source</td>
+                            <td class="table-source"></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td class="table-phone"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td class="table-email"></td>
+                        </tr>
+                        <tr>
+                            <td>Location</td>
+                            <td class="table-location"></td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td class="table-stats"></td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="tables table-five">
+                        <span class="h4 enq-name"></span><span class="float-right h4"><i class="fas fa-times"></i></span>
+                    <ul class="tabs d-flex mt-5 mb-4">
+                        <li class="mr-3 pb-2 active">Overview</li>
+                        <li class="mx-3 pb-2">Conversation</li>
+                        <li class="mx-3 pb-2">SMS</li>
+                        <li class="mx-3 pb-2">Email</li>
+                    </ul>
+                    <span class="h5 font-weight-bold mx-2">Enquiry Details</span>
+                    <table class="mt-4 mx-2 pt-1">
+                        <tr>
+                            <td>Name</td>
+                            <td class="table-name"></td>
+                        </tr>
+                        <tr>
+                            <td>Serial No.</td>
+                            <td class="table-serial"></td>
+                        </tr>
+                        <tr>
+                            <td>Date</td>
+                            <td class="table-date"></td>
+                        </tr>
+                        <tr>
+                            <td>Source</td>
+                            <td class="table-source"></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td class="table-phone"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td class="table-email"></td>
+                        </tr>
+                        <tr>
+                            <td>Location</td>
+                            <td class="table-location"></td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td class="table-stats"></td>
+                        </tr>
+                    </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
